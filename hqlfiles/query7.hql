@@ -1,0 +1,2 @@
+hive -e "SELECT * FROM employees WHERE emp_id IS NULL OR name IS NULL OR age IS NULL OR job_role IS NULL OR salary IS NULL OR project IS NULL OR join_date IS NULL OR department IS NULL;" > query71.txt
+hive -e "SELECT * FROM employees WHERE emp_id IS NOT NULL AND name IS NOT NULL AND age IS NOT NULL AND job_role IS NOT NULL AND salary IS NOT NULL AND project IS NOT NULL AND join_date IS NOT NULL AND department IS NOT NULL;" > query72.txt

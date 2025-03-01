@@ -1,0 +1,1 @@
+hive -e "SELECT emp_id, name, age, job_role, salary, project, join_date, department FROM employees e WHERE salary > (SELECT AVG(salary) FROM employee_data WHERE department = e.department);" > query5.txt

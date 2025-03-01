@@ -1,0 +1,1 @@
+hive -e "SELECT department, COUNT(*) AS employee_count FROM employees GROUP BY department ORDER BY employee_count DESC LIMIT 1;" > query6.txt

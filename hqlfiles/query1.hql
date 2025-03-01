@@ -1,0 +1,1 @@
+hive -e "SELECT * FROM employees WHERE year(join_date) > 2015;" > query1.txt

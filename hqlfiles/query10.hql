@@ -1,0 +1,1 @@
+hive -e "SELECT emp_id, name, age, job_role, salary, project, join_date, department, salary_rank FROM (SELECT emp_id, name, age, job_role, salary, project, join_date, department, RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS salary_rank FROM employees) ranked_employees WHERE salary_rank <= 3;" > query10.txt 

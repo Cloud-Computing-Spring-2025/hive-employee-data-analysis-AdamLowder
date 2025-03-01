@@ -1,0 +1,1 @@
+hive -e "SELECT job_role, COUNT(*) AS employee_count FROM employees GROUP BY job_role;" > query4.txt

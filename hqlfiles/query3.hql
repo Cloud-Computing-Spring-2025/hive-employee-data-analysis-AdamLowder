@@ -1,0 +1,1 @@
+hive -e "SELECT * FROM employees WHERE project = 'Alpha';" > query3.txt
